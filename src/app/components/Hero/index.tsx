@@ -69,8 +69,7 @@ export const Hero = () => {
         preload="none"
         className="object-cover hero-dynasty-video bg-black w-screen h-[110vh] absolute"
       >
-        {/* {vid && <source src={vid}></source>} */}
-        <source src={'/videos/untitled.mp4'} />
+        <source src="https://res.cloudinary.com/dboza0n1a/video/upload/f_auto:video,q_auto/oftey5vusrewytujdjqc" />
       </video>
       <div className="overlay absolute top-0 w-screen h-screen flex justify-center items-center">
         <div className="w-full h-full flex items-center justify-center">
