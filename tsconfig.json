@@ -18,9 +18,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/src/*": ["./src/*"],
+      "@/images/*": ["./public/images/*"],
+      "@/utils/*": ["./src/utils/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/textStagger.tsx"],
   "exclude": ["node_modules"]
 }
