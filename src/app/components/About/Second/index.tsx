@@ -27,10 +27,10 @@ export const Second = () => {
     }
   );
   return (
-    <div className="min-w-screen min-h-screen md:flex items-center justify-center dynasty-journey">
-      <div className="w-full md:w-[50%] h-screen flex items-center justify-center">
-        <div className="w-[500px] h-[583px] overflow-hidden relative flex items-center justify-center">
-          <figure className="dynasty-journey-img-container w-[500px] h-[583px] overflow-hidden border relative">
+    <div className="min-w-screen h-screen md:flex items-center justify-center dynasty-journey p-5">
+      <div className="w-full md:w-[50%] h-[50%] md:h-screen flex items-center justify-center">
+        <div className="w-[500px] h-full overflow-hidden relative flex items-center justify-center">
+          <figure className="dynasty-journey-img-container w-[500px] h-full overflow-hidden border relative">
             <Image
               src="/images/estates/dubai_skyline.jpg"
               className="top-0 w-[500px] h-[583px]"
@@ -41,8 +41,8 @@ export const Second = () => {
           </figure>
         </div>
       </div>
-      <div className="w-full md:w-[50%]">
-        <h1 className="md:text-[40px] optima">Explore Our Journey</h1>
+      <div className="w-full md:w-[50%] mt-5">
+        <h1 className="text-[20px] md:text-[40px] optima">Explore Our Journey</h1>
         <p className="titillium">
           Swipe through our 5+ years of leadership in Dubai&apos;s real estate
           market.

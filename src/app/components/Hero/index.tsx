@@ -124,12 +124,12 @@ export const Hero = () => {
         </div>
       </div>
       <div className="w-full h-full flex flex-col items-center justify-end relative z-[30] hero-wordings opacity-0">
-        <p className="optima text-[20px] text-offwhite h-[10%] flex items-center">
+        <p className="optima text-[10px] md:text-[20px] text-offwhite h-[10%] flex items-center">
           Dynasty Real Estate{' '}
           <span className="inline-block h-[1px] w-[10px] bg-offwhite mx-[3px]"></span>{' '}
           Dubai, UAE
         </p>
-        <h1 className="text-offwhite text-[70px] w-full md:w-[50%] h-[35%] optima leading-[80px] text-center">
+        <h1 className="text-offwhite text-[30px] md:text-[70px] w-full md:w-[50%] h-[35%] optima md:leading-[80px] text-center">
           Find Your Piece of Dubai with Dynasty
         </h1>
       </div>

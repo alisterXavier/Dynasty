@@ -1,7 +1,6 @@
-import Image from 'next/image';
+import team from '@/images/staff-group-photo-enhanced.webp';
 import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import team from '@/images/staff-group-photo-enhanced.webp'
+import Image from 'next/image';
 export const Third = () => {
   useGSAP(
     () => {
@@ -12,7 +11,7 @@ export const Third = () => {
     }
   );
   return (
-    <div className="min-w-screen min-h-screen md:flex items-center justify-center dynasty-discover">
+    <div className="min-w-screen h-screen md:flex items-center justify-center dynasty-discover p-5">
       <div className="w-full md:w-[50%] flex items-center justify-center">
         <div className=''>
           <h1 className="md:text-[40px] optima">
@@ -24,7 +23,7 @@ export const Third = () => {
           </p>
         </div>
       </div>
-      <div className="w-full md:w-[50%] h-screen flex items-center justify-center">
+      <div className="w-full md:w-[50%] h-[50%] flex items-center justify-center">
         <div className="w-[500px] h-[583px] overflow-hidden relative flex items-center justify-center">
           <figure className=" w-[500px] h-[583px] overflow-hidden relative">
             <Image

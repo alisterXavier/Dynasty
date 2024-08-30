@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const Fourth = () => {
   return (
-    <div className="min-w-screen h-[50vh] border">
+    <div className="min-w-screen h-[50vh] border p-5">
       <div className="w-full h-full text-center flex-col flex items-center justify-center">
         <div className="">
           <h1 className="md:text-[40px] optima">Join Our Evolution</h1>
@@ -46,7 +46,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="optima flex flex-col items-center justify-center h-[40%]">
+    <div className="optima flex flex-col items-center justify-center h-[40%] w-full">
       <div className="flex items-center justify-center w-[100%] md:w-[40%] !h-full">
         <Swiper
           mousewheel={true}

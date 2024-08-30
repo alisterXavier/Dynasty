@@ -53,20 +53,20 @@ export const First = () => {
   );
   return (
     <div
-      className="relative w-screen h-screen flex flex-col items-center justify-center "
+      className="relative w-screen h-screen flex flex-col items-center justify-center p-5"
       ref={ref}
     >
       <div className="relative z-10 w-full md:w-[35%] text-center section-text">
-        <h1 className="text-[40px] optima w-full text-center">
+        <h1 className="text-[20px] md:text-[40px] optima w-full text-center">
           Your ideal home is more than a property—it&apos;s a Dynasty.
         </h1>
-        <p className="titillium">
+        <p className="titillium text-[10px]">
           Experience a legacy of excellence where your dreams and future are
           built with every home we find.
         </p>
       </div>
       <div className="absolute w-full h-full top-0 left-0 perspective-1000 transform-style-3d">
-        <motion.figure className="absolute w-[400px] h-[450px] right-[5%] top-[10%] -translate-z-[30px]">
+        <motion.figure className="absolute w-[150px] h-[150px] md:w-[400px] md:h-[450px] right-[5%] top-[20%] md:top-[10%] -translate-z-[30px]">
           <Image
             src={burj_arab}
             fill
@@ -75,7 +75,7 @@ export const First = () => {
             alt="burj"
           />
         </motion.figure>
-        <motion.figure className="absolute w-[350px] h-[300px] left-[5%] top-[5%] -translate-z-[90px]">
+        <motion.figure className="absolute w-[100px] h-[100px] md:w-[350px] md:h-[300px] left-[5%] top-[5%] -translate-z-[90px]">
           <Image
             src={villas}
             fill
@@ -85,14 +85,14 @@ export const First = () => {
           />
         </motion.figure>
         <motion.video
-          className="absolute w-[350px] h-[300px] left-[15%] bottom-[10%] -translate-z-[160px]"
+          className="absolute w-[100px] h-[200px] md:w-[350px] md:h-[300px] left-[15%] bottom-[10%] -translate-z-[160px]"
           autoPlay
           loop
           muted
         >
           <source src="/videos/untitled-2.mp4" />
         </motion.video>
-        <motion.figure className="absolute w-[350px] h-[300px] right-[10%] -bottom-[20%] -translate-z-[280px]">
+        <motion.figure className="absolute w-[180px] h-[150px] md:w-[350px] md:h-[300px] right-[10%] bottom-0 md:-bottom-[20%] -translate-z-[280px]">
           <Image
             src={living}
             fill
