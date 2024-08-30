@@ -92,7 +92,7 @@ export const First = () => {
         >
           <source src="/videos/untitled-2.mp4" />
         </motion.video>
-        <motion.figure className="absolute w-[180px] h-[150px] md:w-[350px] md:h-[300px] right-[10%] bottom-0 md:-bottom-[20%] -translate-z-[280px]">
+        <motion.figure className="absolute w-[180px] h-[150px] md:w-[350px] md:h-[300px] right-[5%] md:right-[10%] bottom-0 md:-bottom-[20%] -translate-z-[280px]">
           <Image
             src={living}
             fill

@@ -31,7 +31,7 @@ const testimonials = [
     para: 'I would like to share my impression about Sunny, an employee of the Dynasty Real Estate. He is very responsible, erudite and subtle in details. He helped to purchase real estate at the best price, accompanying to the end of the transaction. I recommend it to anyone who wants to receive a service in the highest quality.',
   },
   {
-    name: 'Unknown',
+    name: '',
     para: 'I cannot speak highly enough of my experience with Sameer. Throughout the process, he was incredibly responsive & proactive. He promptly answered all my questions, negotiated terms with the landlord on my behalf, and ensured that the entire process went smoothly from start to finish.',
   },
   {
@@ -46,8 +46,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="optima flex flex-col items-center justify-center h-[40%] w-full">
-      <div className="flex items-center justify-center w-[100%] md:w-[40%] !h-full">
+    <div className="optima flex flex-col items-center justify-center h-[50%] md:w-[50%] w-full">
+      <div className="flex items-center justify-center w-[100%] !h-full">
         <Swiper
           mousewheel={true}
           autoplay={{

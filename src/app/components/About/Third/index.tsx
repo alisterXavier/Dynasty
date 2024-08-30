@@ -14,7 +14,7 @@ export const Third = () => {
     <div className="min-w-screen h-screen md:flex items-center justify-center dynasty-discover p-5">
       <div className="w-full md:w-[50%] flex items-center justify-center">
         <div className=''>
-          <h1 className="md:text-[40px] optima">
+          <h1 className="text-[20px] md:text-[40px] optima">
             Discover the Dynasty Difference
           </h1>
           <p className="titillium">

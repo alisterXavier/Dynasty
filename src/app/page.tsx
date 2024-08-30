@@ -32,13 +32,12 @@ export default function Home() {
   useGSAP(
     () => {
       gsap.to('.main_container', {
-        y: '-40vh',
+        y: '-35vh',
         scrollTrigger: {
           trigger: '.dynasty-move',
           start: 'top 100%',
           end: "bottom 30%",
           scrub: true,
-          // markers: true
         },
       });
     },

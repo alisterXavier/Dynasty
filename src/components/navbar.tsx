@@ -35,6 +35,7 @@ const Navbar = () => {
       gsap.to('.nav', {
         height: '10vh',
         backdropFilter: 'blur(10px)',
+        background: '#f5f5fa',
         scrollTrigger: {
           trigger: '.hero-section',
           start: 'top 5%',
@@ -102,7 +103,7 @@ const Navbar = () => {
     }
   );
   return (
-    <div className="nav fixed top-0 h-[15vh] w-screen z-[100] invisible border-b">
+    <div className="nav fixed top-0 h-[10vh] md:h-[15vh] w-screen z-[100] invisible border-b">
       <div className="h-full flex items-center justify-center">
         <div className="fixed z-[11] top-[50%] -translate-y-[50%] left-5 burger-icon">
           <label className="burger" htmlFor="burger">

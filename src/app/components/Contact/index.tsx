@@ -93,7 +93,7 @@ export const Contact = () => {
     <div className="dynasty-contact-container w-screen h-[30vh] overflow-hidden flex justify-center items-center absolute bottom-0 z-[1]">
       <div className="dynasty-contact w-full h-full flex items-center justify-center z-[10]">
         <div className="h-full flex flex-col justify-center">
-          <Image src={palms} alt="" fill objectFit="cover" />
+          <Image src={palms} alt="" fill objectFit="cover" sizes='100%'/>
         </div>
         <div className="dynasty-contact-inside relative h-[60%] w-[80%] flex items-center justify-center">
           {/* <p className="titillium  dynasty-contact-email text-[10px] md:text-[15px]">
