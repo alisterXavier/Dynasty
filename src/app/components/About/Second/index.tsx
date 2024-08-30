@@ -50,7 +50,7 @@ export const Second = () => {
             5+ years of leadership in Dubai&apos;s real estate market.
           </p>
         </div>
-        <div className="grid grid-cols-3 mt-5 w-[50%]">
+        <div className="grid grid-cols-3 mt-5 md:w-[50%]">
           <div className="w-[70%] border-r-[2px]">
             <p className="text-[15px] optima">Portfolio</p>
             <p className="text-[30px] titillium">1B+</p>

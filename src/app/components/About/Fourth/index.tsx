@@ -7,7 +7,7 @@ export const Fourth = () => {
     <div className="min-w-screen h-[50vh] border p-5">
       <div className="w-full h-full text-center flex-col flex items-center justify-center">
         <div className="">
-          <h1 className="md:text-[40px] optima">Join Our Evolution</h1>
+          <h1 className="text-[20px] md:text-[40px] optima">Join Our Evolution</h1>
           <p className="titillium">
             See how we’ve expanded to serve your diverse real estate needs.
           </p>

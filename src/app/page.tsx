@@ -50,7 +50,6 @@ export default function Home() {
       root
       options={{
         lerp: 0.08,
-        syncTouch: true,
       }}
     >
       <main className="dynasty-real-estate">

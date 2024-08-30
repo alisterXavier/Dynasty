@@ -18,7 +18,7 @@ export const Partners = () => {
   return (
     <div className="h-[30vh] md:h-[50vh] w-full flex flex-col items-center justify-center p-5 bg-offwhite" id='partners'>
       <div className="w-[80%] h-full flex flex-col items-center justify-center">
-        <h1 className="optima md:text-4xl text-2xl">
+        <h1 className="optima md:text-[40px] text-[20px]">
           OUR PARTNERS
         </h1>
         <p className="titillium md:text-[16px] text-[13px]">

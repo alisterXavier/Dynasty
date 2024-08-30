@@ -106,7 +106,10 @@ const Navbar = () => {
     <div className="nav fixed top-0 h-[10vh] md:h-[15vh] w-screen z-[100] invisible border-b">
       <div className="h-full flex items-center justify-center">
         <div className="fixed z-[11] top-[50%] -translate-y-[50%] left-5 burger-icon">
-          <label className="burger" htmlFor="burger">
+          <label
+            className="burger w-[25px] h-[25px] md:w-[40px] md:h-[40px]"
+            htmlFor="burger"
+          >
             <input
               className="line"
               type="checkbox"
@@ -116,10 +119,10 @@ const Navbar = () => {
           </label>
         </div>
         <div className="w-full h-full flex items-center justify-center">
-          <div className="relative w-[150px] h-full">
+          <div className="relative w-[100px] md:w-[150px] h-full">
             <Link
               href="/"
-              className="absolute optima text-[17px] top-[50%] -translate-y-[50%] nav_logo_text w-full h-[17px] text-center"
+              className="absolute optima text-[11px] md:text-[17px] top-[50%] -translate-y-[50%] nav_logo_text w-full h-[10px] md:h-[17px] text-center"
             >
               DYNASTY
             </Link>
@@ -129,7 +132,7 @@ const Navbar = () => {
                 viewBox="0 0 350 80"
                 width="2000"
                 height="800"
-                className="nav_logo absolute z-[10] top-[50%] -translate-y-[50%] left-0 !w-[150px] !h-[100px] invisible"
+                className="nav_logo absolute z-[10] top-[50%] -translate-y-[50%] left-0 w-[100px] h-[100px] md:!w-[150px] md:!h-[100px] invisible"
               >
                 <text
                   id="theText"

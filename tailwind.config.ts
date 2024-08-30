@@ -26,4 +26,7 @@ export const theme = {
   },
 };
 
-export const plugins = [require('tailwindcss-3d')({ legacy: true })];
+export const plugins = [
+  require('tailwindcss-3d')({ legacy: true }),
+  require('tailwind-clip-path'),
+];

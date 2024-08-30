@@ -15,33 +15,27 @@ export const First = () => {
       const video = ref.current?.querySelectorAll('video')!;
       const text = ref.current?.querySelector('.section-text')!;
       gsap.fromTo(
-        [images, video],
+        [text, ...Array.from(images).slice(0, 2)],
+        { y: 100 },
         {
-          y: '50%',
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
+          y: -200,
           scrollTrigger: {
             trigger: ref.current,
-            start: 'top center',
-          },
-          stagger: {
-            amount: 0.2,
-            from: 'random',
+            scrub: true,
+            start: 'top 20%',
+            end: 'bottom -50%',
           },
         }
       );
       gsap.fromTo(
-        text,
+        [video, ...Array.from(images).slice(2, 3)],
         { y: 100 },
         {
           y: -100,
           scrollTrigger: {
             trigger: ref.current,
             scrub: true,
-            start: 'top center',
+            start: 'top 20%',
             end: 'bottom -50%',
           },
         }
@@ -85,14 +79,14 @@ export const First = () => {
           />
         </motion.figure>
         <motion.video
-          className="absolute w-[100px] h-[200px] md:w-[350px] md:h-[300px] left-[15%] bottom-[10%] -translate-z-[160px]"
+          className="absolute w-[100px] h-[200px] md:w-[350px] md:h-[300px] left-[10%] md:left-[15%] bottom-[10%] -translate-z-[160px]"
           autoPlay
           loop
           muted
         >
           <source src="/videos/untitled-2.mp4" />
         </motion.video>
-        <motion.figure className="absolute w-[180px] h-[150px] md:w-[350px] md:h-[300px] right-[5%] md:right-[10%] bottom-0 md:-bottom-[20%] -translate-z-[280px]">
+        <motion.figure className="absolute w-[180px] h-[150px] md:w-[350px] md:h-[300px] right-[0%] md:right-[10%] bottom-0 md:-bottom-[20%] -translate-z-[280px]">
           <Image
             src={living}
             fill
