@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export const Footer = () => {
   return (
     <div className="dynasty-move min-h-[70vh] flex justify-center items-center bg-[var(--bg)] shadow-[10px_100px_100px_0px_rgba(0,0,0,0.3)] p-10">
-      <div className="w-full md:h-[50%] h-full flex justify-center flex-wrap">
-        <div className="flex flex-wrap justify-evenly w-full">
+      <div className="w-full h-full flex justify-center flex-wrap">
+        <div className="h-[50%] flex flex-wrap justify-evenly w-full mb-5">
           <div className="w-[250px] md:h-[100%] my-5 md:my-0">
             <h1 className="text-[20px]  optima text-white">
               The Burlington Tower
@@ -70,7 +70,7 @@ export const Footer = () => {
               >
                 Team
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 href="/contact"
                 className="
                 md:text-[16px] text-[13px]
@@ -89,8 +89,19 @@ export const Footer = () => {
                         after:duration-200 text-white optima text-sm"
               >
                 Careers
-              </motion.a>
+              </motion.a> */}
             </div>
+          </div>
+        </div>
+
+        <div className="w-full md:h-[50%] md:my-5 flex items-center justify-center flex-wrap">
+          <div className="w-[250px] text-offwhite">
+            <h1 className="text-[20px] md:text-[25px] optima">Send us your Profile</h1>
+            <p className="text-[10px] md:text-[15px]">hr@dynastyrealestate.ae</p>
+          </div>
+          <div className="w-[250px] text-offwhite">
+            <h1 className="text-[20px] md:text-[25px] optima text-white">Get in touch</h1>
+            <p className="text-[10px] md:text-[15px] text-offwhite">hello@dynastyrealestate.ae</p>
           </div>
         </div>
       </div>

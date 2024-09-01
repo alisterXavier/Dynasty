@@ -199,12 +199,12 @@ const Navbar = () => {
             >
               Partners
             </Link>
-            <Link
+            {/* <Link
               href={'/contact'}
               className='nav_item relative text-[40px] optima uppercase cursor-pointer hover:translate-x-4 herte after:content("") z-[1] after:absolute after:bottom-[0%] after:left-[0%] after:w-0 after:h-[1px] after:bg-black hover:after:w-full after:transition-all'
             >
               Contact
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
       </motion.nav>

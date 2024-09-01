@@ -2,6 +2,7 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef, useState } from 'react';
+import { Video } from './Video/page';
 
 const vids = [
   'https://res.cloudinary.com/dboza0n1a/video/upload/v1715441303/aerial-view-of-dubai-expo-2020-united-arab-emirat-2022-08-10-11-55-18-utc_2_mija1p.mp4',
@@ -13,11 +14,9 @@ const vids = [
 
 export const Hero = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const [vid, setVid] = useState<string>('');
 
   useGSAP(
     () => {
-      setVid(vids[Math.round(Math.random() * 4)]);
       const text = ref.current?.querySelector('#theText')!;
       const sub_text = ref.current?.querySelector('#sub-text')!;
       const svg = ref.current?.querySelector('.overlay .hero-title-container')!;
@@ -62,15 +61,7 @@ export const Hero = () => {
       className="hero-section relative w-screen h-[110vh] z-[1] overflow-hidden bg-black"
       ref={ref}
     >
-      <video
-        autoPlay
-        loop
-        muted
-        preload="none"
-        className="object-cover hero-dynasty-video bg-black w-screen h-[110vh] absolute"
-      >
-        <source src="https://res.cloudinary.com/dboza0n1a/video/upload/f_auto:video,q_auto/oftey5vusrewytujdjqc" />
-      </video>
+      <Video />
       <div className="overlay absolute top-0 w-screen h-screen flex justify-center items-center">
         <div className="w-full h-full flex items-center justify-center">
           <div className="hero-title-container w-full">
@@ -113,13 +104,6 @@ export const Hero = () => {
                 DYNASTY
               </text>
             </svg>
-
-            {/* <div className="relative w-fit overflow-hidden">
-              <h2 className="hero-dynasty-sub-title w-fit whitespace-nowrap titillium text-xs md:text-lg text-white opacity-0">
-                Real Estate
-              </h2>
-              <span className="hero-sub-title-cover absolute bg-white w-full h-full left-0 top-0 -translate-x-[100%]" />
-            </div> */}
           </div>
         </div>
       </div>

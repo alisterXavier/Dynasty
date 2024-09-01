@@ -29,9 +29,9 @@ export const First = () => {
       );
       gsap.fromTo(
         [video, ...Array.from(images).slice(2, 3)],
-        { y: 100 },
+        { y: 150 },
         {
-          y: -100,
+          y: -150,
           scrollTrigger: {
             trigger: ref.current,
             scrub: true,
