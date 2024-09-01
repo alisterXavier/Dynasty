@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 import SplitType from 'split-type';
 
-export function Map() {
+function Mapsn() {
   const tabs = [
     {
       title: 'Moto City',
